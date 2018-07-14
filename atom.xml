@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Cimon&#39;s blogs</title>
+  
+  <subtitle>走更多的路，看更多的风景，做有趣的事！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-07-14T16:02:27.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Cimon</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hive问题收集</title>
+    <link href="http://yoursite.com/2018/07/14/Hive%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/"/>
+    <id>http://yoursite.com/2018/07/14/Hive问题收集/</id>
+    <published>2018-07-14T10:16:01.000Z</published>
+    <updated>2018-07-14T16:02:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.Need to specify partition columns because the destination table is partition</p><p>​    需要在插入的数据中<br>$$<br>\sum_{i=1}^n a_i=0<br>$$<br>指定分区字段的数值是多少。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> <span class="keyword">test</span> <span class="keyword">PARTITION</span>(username=<span class="string">'admin'</span>) #分区字段指定</span><br><span class="line"><span class="keyword">select</span> starttime, endtime, title </span><br><span class="line"><span class="keyword">from</span> test2 </span><br><span class="line"><span class="keyword">where</span> username = <span class="string">'admin'</span>;</span><br></pre></td></tr></table></figure><p>$$<br>\sum_{i=1}^n a_i=0<br>$$</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.Need to specify partition columns because the destination table is partition&lt;/p&gt;
+&lt;p&gt;​    需要在插入的数据中&lt;br&gt;$$&lt;br&gt;\sum_{i=1}^n a_i=0&lt;br&gt;$$&lt;br
+      
+    
+    </summary>
+    
+    
+      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title> first blog</title>
+    <link href="http://yoursite.com/2018/07/14/first-blog/"/>
+    <id>http://yoursite.com/2018/07/14/first-blog/</id>
+    <published>2018-07-14T09:10:30.000Z</published>
+    <updated>2018-07-14T09:13:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎 访问 Cimon 的博客,欢迎交流！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;欢迎 访问 Cimon 的博客,欢迎交流！&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
