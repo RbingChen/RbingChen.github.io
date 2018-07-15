@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-14T16:02:27.000Z</updated>
+  <updated>2018-07-14T16:18:17.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/07/14/Hive%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/"/>
     <id>http://yoursite.com/2018/07/14/Hive问题收集/</id>
     <published>2018-07-14T10:16:01.000Z</published>
-    <updated>2018-07-14T16:02:27.000Z</updated>
+    <updated>2018-07-14T16:18:17.000Z</updated>
     
     <content type="html"><![CDATA[<p>1.Need to specify partition columns because the destination table is partition</p><p>​    需要在插入的数据中<br>$$<br>\sum_{i=1}^n a_i=0<br>$$<br>指定分区字段的数值是多少。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> <span class="keyword">test</span> <span class="keyword">PARTITION</span>(username=<span class="string">'admin'</span>) #分区字段指定</span><br><span class="line"><span class="keyword">select</span> starttime, endtime, title </span><br><span class="line"><span class="keyword">from</span> test2 </span><br><span class="line"><span class="keyword">where</span> username = <span class="string">'admin'</span>;</span><br></pre></td></tr></table></figure><p>$$<br>\sum_{i=1}^n a_i=0<br>$$</p>]]></content>
     
@@ -34,6 +34,8 @@
       
     
     </summary>
+    
+      <category term="SQL" scheme="http://yoursite.com/categories/SQL/"/>
     
     
       <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
