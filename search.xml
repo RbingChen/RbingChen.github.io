@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hive问题收集]]></title>
     <url>%2F2018%2F07%2F14%2FHive%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86%2F</url>
-    <content type="text"><![CDATA[1.Need to specify partition columns because the destination table is partition ​ 需要在插入的数据中$$\sum_{i=1}^n a_i=0$$指定分区字段的数值是多少。 1234insert into table test PARTITION(username='admin') #分区字段指定 select starttime, endtime, title from test2 where username = 'admin'; $$\sum_{i=1}^n a_i=0$$]]></content>
+    <content type="text"><![CDATA[1.Need to specify partition columns because the destination table is partition ​ 需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username='admin') #分区字段指定 select starttime, endtime, title from test2 where username = 'admin';]]></content>
       <categories>
         <category>SQL</category>
       </categories>

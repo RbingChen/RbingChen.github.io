@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中$$\sum_{i=1}^n a_i=0$$指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select s">
+<meta name="description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select starttime, endtime, ti">
 <meta name="keywords" content="SQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hive问题收集">
 <meta property="og:url" content="http://yoursite.com/2018/07/14/Hive问题收集/index.html">
 <meta property="og:site_name" content="Cimon&#39;s blogs">
-<meta property="og:description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中$$\sum_{i=1}^n a_i=0$$指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select s">
+<meta property="og:description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select starttime, endtime, ti">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-14T16:18:17.000Z">
+<meta property="og:updated_time" content="2018-07-15T03:11:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hive问题收集">
-<meta name="twitter:description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中$$\sum_{i=1}^n a_i=0$$指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select s">
+<meta name="twitter:description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select starttime, endtime, ti">
 
 
 
@@ -403,9 +403,9 @@
 
       
         <p>1.Need to specify partition columns because the destination table is partition</p>
-<p>​    需要在插入的数据中<br>$$<br>\sum_{i=1}^n a_i=0<br>$$<br>指定分区字段的数值是多少。</p>
+<p>​    需要在插入的数据中</p>
+<p>指定分区字段的数值是多少。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> <span class="keyword">test</span> <span class="keyword">PARTITION</span>(username=<span class="string">'admin'</span>) #分区字段指定</span><br><span class="line">	<span class="keyword">select</span> starttime, endtime, title </span><br><span class="line">	<span class="keyword">from</span> test2 </span><br><span class="line">	<span class="keyword">where</span> username = <span class="string">'admin'</span>;</span><br></pre></td></tr></table></figure>
-<p>$$<br>\sum_{i=1}^n a_i=0<br>$$</p>
 
       
     </div>
