@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select starttime, endtime, ti">
+<meta name="description" content="[TOC]  abb1b2c1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select startti">
 <meta name="keywords" content="SQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hive问题收集">
 <meta property="og:url" content="http://yoursite.com/2018/07/14/Hive问题收集/index.html">
 <meta property="og:site_name" content="Cimon&#39;s blogs">
-<meta property="og:description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select starttime, endtime, ti">
+<meta property="og:description" content="[TOC]  abb1b2c1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select startti">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-15T03:11:30.000Z">
+<meta property="og:updated_time" content="2018-07-15T03:57:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hive问题收集">
-<meta name="twitter:description" content="1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select starttime, endtime, ti">
+<meta name="twitter:description" content="[TOC]  abb1b2c1.Need to specify partition columns because the destination table is partition ​    需要在插入的数据中 指定分区字段的数值是多少。 1234insert into table test PARTITION(username=&apos;admin&apos;) #分区字段指定	select startti">
 
 
 
@@ -100,7 +100,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -145,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -362,17 +362,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/14/Hive问题收集/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/14/Hive问题收集/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -402,7 +391,10 @@
       
 
       
-        <p>1.Need to specify partition columns because the destination table is partition</p>
+        <hr>
+<p>[TOC]</p>
+<hr>
+<h1 id="a"><a href="#a" class="headerlink" title="a"></a>a</h1><h1 id="b"><a href="#b" class="headerlink" title="b"></a>b</h1><h2 id="b1"><a href="#b1" class="headerlink" title="b1"></a>b1</h2><h3 id="b2"><a href="#b2" class="headerlink" title="b2"></a>b2</h3><h1 id="c"><a href="#c" class="headerlink" title="c"></a>c</h1><p>1.Need to specify partition columns because the destination table is partition</p>
 <p>​    需要在插入的数据中</p>
 <p>指定分区字段的数值是多少。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> <span class="keyword">test</span> <span class="keyword">PARTITION</span>(username=<span class="string">'admin'</span>) #分区字段指定</span><br><span class="line">	<span class="keyword">select</span> starttime, endtime, title </span><br><span class="line">	<span class="keyword">from</span> test2 </span><br><span class="line">	<span class="keyword">where</span> username = <span class="string">'admin'</span>;</span><br></pre></td></tr></table></figure>
@@ -474,16 +466,6 @@
           
 
   
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    </div>
-
-  
 
 
 
@@ -506,8 +488,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -587,6 +578,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#a"><span class="nav-number">1.</span> <span class="nav-text">a</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#b"><span class="nav-number">2.</span> <span class="nav-text">b</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#b1"><span class="nav-number">2.1.</span> <span class="nav-text">b1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#b2"><span class="nav-number">2.1.1.</span> <span class="nav-text">b2</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#c"><span class="nav-number">3.</span> <span class="nav-text">c</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -803,26 +810,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://Cimon.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/07/14/Hive问题收集/';
-          this.page.identifier = '2018/07/14/Hive问题收集/';
-          this.page.title = 'Hive问题收集';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://Cimon.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -835,6 +822,10 @@
   
 
 
+
+
+
+  
 
 
 

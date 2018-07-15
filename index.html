@@ -95,7 +95,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -140,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <div class="container sidebar-position-right 
   page-home">
     <div class="headband"></div>
 
@@ -360,17 +360,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/14/Hive问题收集/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/14/Hive问题收集/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -397,10 +386,13 @@
       
         
           
-          1.Need to specify partition columns because the destination table is partition
+          
+[TOC]
+
+abb1b2c1.Need to specify partition columns because the destination table is partition
 ​    需要在插入的数据中
 指定分区字段的数值是多少。
-1234insert into table test PARTITION(usern
+1234insert into table test 
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -499,17 +491,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/14/first-blog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/14/first-blog/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -903,14 +884,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://Cimon.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -923,6 +896,10 @@
   
 
 
+
+
+
+  
 
 
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T03:11:30.000Z</updated>
+  <updated>2018-07-15T03:57:51.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,18 @@
     <link href="http://yoursite.com/2018/07/14/Hive%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/"/>
     <id>http://yoursite.com/2018/07/14/Hive问题收集/</id>
     <published>2018-07-14T10:16:01.000Z</published>
-    <updated>2018-07-15T03:11:30.000Z</updated>
+    <updated>2018-07-15T03:57:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p>1.Need to specify partition columns because the destination table is partition</p><p>​    需要在插入的数据中</p><p>指定分区字段的数值是多少。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> <span class="keyword">test</span> <span class="keyword">PARTITION</span>(username=<span class="string">'admin'</span>) #分区字段指定</span><br><span class="line"><span class="keyword">select</span> starttime, endtime, title </span><br><span class="line"><span class="keyword">from</span> test2 </span><br><span class="line"><span class="keyword">where</span> username = <span class="string">'admin'</span>;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<hr><p>[TOC]</p><hr><h1 id="a"><a href="#a" class="headerlink" title="a"></a>a</h1><h1 id="b"><a href="#b" class="headerlink" title="b"></a>b</h1><h2 id="b1"><a href="#b1" class="headerlink" title="b1"></a>b1</h2><h3 id="b2"><a href="#b2" class="headerlink" title="b2"></a>b2</h3><h1 id="c"><a href="#c" class="headerlink" title="c"></a>c</h1><p>1.Need to specify partition columns because the destination table is partition</p><p>​    需要在插入的数据中</p><p>指定分区字段的数值是多少。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> <span class="keyword">test</span> <span class="keyword">PARTITION</span>(username=<span class="string">'admin'</span>) #分区字段指定</span><br><span class="line"><span class="keyword">select</span> starttime, endtime, title </span><br><span class="line"><span class="keyword">from</span> test2 </span><br><span class="line"><span class="keyword">where</span> username = <span class="string">'admin'</span>;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;1.Need to specify partition columns because the destination table is partition&lt;/p&gt;
-&lt;p&gt;​    需要在插入的数据中&lt;/p&gt;
-&lt;p&gt;指定分区字段的数值是多少。&lt;/p&gt;
-&lt;figure cla
+        &lt;hr&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;a&quot;&gt;&lt;a href=&quot;#a&quot; class=&quot;headerlink&quot; title=&quot;a&quot;&gt;&lt;/a&gt;a&lt;/h1&gt;&lt;h1 id=&quot;b&quot;&gt;&lt;a href=&quot;#b&quot; class=&quot;headerlink&quot; title=&quot;b&quot;&gt;&lt;
       
     
     </summary>
